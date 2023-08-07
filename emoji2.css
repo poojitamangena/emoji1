@@ -1,0 +1,120 @@
+div {
+    position: absolute;
+    box-sizing: border-box;
+  }
+  
+  .center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .x-center {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .y-center {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .container {
+    width: 90vmin;
+    height: 70vmin;
+    overflow: hidden;
+    background: linear-gradient(
+      #b3c5cf 21%,
+      #bac2c4 21% 37%,
+      #b5b4b2 37% 47%,
+      #a99fa2 47% 53%,
+      #1d2742 53% 60%,
+      #6477a1 60% 65%,
+      #9b97b0 65% 70%,
+      #6477a1 70% 75%,
+      #9b97b0 75% 78%,
+      #6477a1 78%
+    );
+  }
+  
+  .home {
+    bottom: 40%;
+    right: 20%;
+    width: 27%;
+    height: 23%;
+  }
+  
+  .front {
+    width: 54%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: #555974;
+    clip-path: polygon(50% 0, 100% 45%, 100% 100%, 0 100%, 0 45%);
+    z-index: 5;
+  }
+  
+  .roof {
+    width: 74%;
+    height: 71%;
+    left: 0;
+    top: 0;
+    background-color: #302428;
+    clip-path: polygon(60% 0, 99% 0, 41% 100%, 0 100%);
+  }
+  
+  .side {
+    bottom: 0;
+    background-color: #dbd6b6;
+  }
+  
+  .side.o {
+    width: 30%;
+    height: 54%;
+    right: 54%;
+  }
+  
+  .side.t {
+    width: 17%;
+    height: 29%;
+    left: 0;
+  }
+  
+    body{
+        height: 800px;
+        background-size: cover;
+        background-color: rgb(82, 109, 182); 
+        background-image: linear-gradient(to bottom right, rgb(94, 98, 173), rgb(166, 85, 172));
+      }
+      
+                      
+  
+  #cloud{
+    margin-top: 100px;
+    margin-left: 20px;
+    width: 230px;
+    height: 60px;
+    border-radius:50px;
+    background: #708fb5;
+    position: relative;
+}
+#cloud:before{
+    position: absolute;
+    content:"";
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background:  #708fb5;
+    bottom:30px;
+    left:30px;
+}
+#cloud:after{
+    position: absolute;
+    content:"";
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: orangered;
+    bottom: 20px;
+    left:90px;
+}
